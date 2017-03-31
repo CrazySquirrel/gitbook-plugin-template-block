@@ -1,0 +1,34 @@
+{
+  "name": "gitbook-plugin-dsp-doc",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vliejo/gitbook-plugin-dsp-doc.git"
+  },
+  "engines": {
+    "gitbook": ">=3.1.0"
+  },
+  "main": "lib/index.js",
+  "keywords": [
+    "gitbook",
+    "plantuml"
+  ],
+  "author": "Sergey Yastrebov <s.yastrebov@rambler-co.ru>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "codeclimate analyze"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "eslintConfig": {
+    "env": {
+      "es6": true
+    }
+  },
+  "dependencies": {
+    "eslint": "^3.18.0",
+    "pre-commit": "^1.2.2"
+  }
+}

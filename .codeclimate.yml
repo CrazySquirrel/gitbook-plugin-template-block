@@ -1,0 +1,22 @@
+engines:
+  csslint:
+      enabled: true
+  eslint:
+    enabled: true
+  markdownlint:
+    enabled: true
+  nodesecurity:
+    enabled: true
+  scss-lint:
+    enabled: true
+ratings:
+  paths:
+    - src
+    - lib
+exclude_paths:
+  - bin
+  - dist
+  - node_modules
+  - .git
+  - .idea
+  - "**.json"
