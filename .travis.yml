@@ -10,5 +10,4 @@ deploy:
   api_key: '443206b0-d7ea-47eb-89ca-9ff2e6ec246b'
   skip_cleanup: true
   on:
-    tags: true
     branch: master
