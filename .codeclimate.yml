@@ -11,12 +11,15 @@ engines:
     enabled: true
 ratings:
   paths:
-    - src
     - lib
 exclude_paths:
   - bin
   - dist
   - node_modules
+  - src
+  - doc
   - .git
   - .idea
+  - CHANGELOG.md
+  - LICENSE.md
   - "**.json"
