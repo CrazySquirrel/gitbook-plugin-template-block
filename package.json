@@ -1,10 +1,10 @@
 {
   "name": "gitbook-plugin-template-block",
   "version": "1.0.2",
-  "description": "",
+  "description": "Gitbook plugin for block templating",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vliejo/gitbook-plugin-template-block.git"
+    "url": "git@github.com:CrazySquirrel/gitbook-plugin-template-block.git"
   },
   "engines": {
     "gitbook": ">=3.1.0"
@@ -14,10 +14,12 @@
     "gitbook",
     "plantuml"
   ],
-  "author": "Sergey Yastrebov <s.yastrebov@rambler-co.ru>",
+  "author": "Sergey Yastrebov <info@crazysquirrel.ru>",
   "license": "MIT",
   "scripts": {
-    "lint": "codeclimate analyze"
+    "lint": "codeclimate analyze",
+    "release": "standard-version && git push origin master --tags",
+    "commit": "git-cz -a"
   },
   "pre-commit": [
     "lint"
@@ -27,8 +29,17 @@
       "es6": true
     }
   },
-  "dependencies": {
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.18.0",
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "standard-version": "^4.0.0"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
