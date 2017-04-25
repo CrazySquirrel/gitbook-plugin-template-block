@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-template-block",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Gitbook plugin for block templating",
   "repository": {
     "type": "git",
